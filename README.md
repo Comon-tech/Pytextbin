@@ -4,14 +4,18 @@
 
 # installation
 
+- pypi
 > [pypi link](https://pypi.org/project/textbin/)
->
-> > `pip install textbin`
 
+- cli
+> `pip install textbin`
+
+- github
 > [git repo](https://github.com/C-o-m-o-n/textbin)
 
 # usage
 
+- ## Text and Binary
 ```python
 from textbin.textbin import *
 
@@ -19,23 +23,18 @@ word = "hello"
 
 converted_word = textbin.to_binary(word)
 
-print(converted_word)
+print(converted_word) ## '1101000 1100101 1101100 1101100 1101111'
 
-$ '1101000 1100101 1101100 1101100 1101111'
-
-
----
 
 binary = "1101000 1100101 1101100 1101100 1101111"
 
 converted_binary = textbin.to_binary(binary)
 
-print(converted_binary)
-$ hello
+print(converted_binary) ## hello
 
 ```
 
-# JSON and Base64
+- ## JSON and Base64
 
 ```python
 from textbin.textbin import json_to_base64,base64_to_base64
@@ -55,8 +54,7 @@ print(converted_binary)  ## {'foo': 'bar'}
 
 ```
 
-# contributions
-
+# contributions profiles
 - [Roldex](https://github.com/r0ld3x)
 
 ### your contributions will be highly appreciated
