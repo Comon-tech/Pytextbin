@@ -1,6 +1,7 @@
 import json
 import base64
 from typing import Union
+import csv
 
 class Textbin:
     def to_binary(self, text: str) -> str:
