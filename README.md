@@ -1,6 +1,8 @@
 # textbin
 
 **textbin** is a Python package that provides text-to-binary and binary-to-text conversion, as well as JSON-to-base64 and base64-to-JSON encoding and decoding.
+See the [documentaion](https://c-o-m-o-n.github.io/textbin/) for more information
+
 
 ## Installation
 
