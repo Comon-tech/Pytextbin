@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:   sans-serif;
+}
+
+body{
+    color: aliceblue;
+    background-color:#272a34;
+}
+
+nav,.menu, .logo{
+    background-color: rgb(255, 255, 255, 0.6);
+    box-shadow: gray 5px 5px 10px;
+    border-radius: 20px;
+    padding: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    padding: 3px;
+    background-color: #a56262;
+    color: #bac2db;
+    padding: 5px 5px;
+}
+
+.menu .link-item a{
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+.about-install{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.about-textbin,
+.installation,
+.usage,
+.inside-textbin,
+.text-bin,
+.json-base{
+    margin: 30px;
+    background-color: #10151b91;
+    max-width: 400px;
+    padding: 5px 15px;
+    border: 2px solid #81ca4d;
+    box-shadow: #81ca4d 5px 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    text-wrap: wrap;
+    border-radius: 30px;
+}
+
+.installation{
+    margin: 8px;
+}
+.usage{
+    max-width:100%;
+}
+
+.code-area{
+    display: flex;
+    flex-wrap: wrap;
+}
