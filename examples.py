@@ -9,6 +9,9 @@ Inside the textbin.py, there is a 'Textbin()' class which has the methods:
 - base64_to_json: Converts a base64-encoded string to a JSON object.
 - csv_to_json: Converts a CSV string to a JSON object.
 - json_to_csv: Converts a JSON object to a CSV string.
+- xml_to_json: Converts an XML string to a JSON object.
+- json_to_xml: Converts a JSON object to an XML string.
+- xml_to_csv: Converts an XML string to a CSV file.
 -----
 
 To begin, create an object from the Textbin() class, which you'll use to access all the methods.
