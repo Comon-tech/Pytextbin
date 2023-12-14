@@ -1,5 +1,5 @@
 # Import everything from textbin
-from textbin import *
+from pytextbin import *
 
 """
 Inside the textbin.py, there is a 'Textbin()' class which has the methods:
@@ -18,21 +18,21 @@ To begin, create an object from the Textbin() class, which you'll use to access 
 """
 
 # 0) create textbin_obj instance 
-textbin_obj = textbin.Textbin()
+textbin_obj = pytextbin.Textbin()
 
 # 1) convert text to binary
 text = 'hello world'
 converted = textbin_obj.to_binary(text)
-print(converted)
+print("to_binary>>", converted)
 
 # 2) convert json data to a base64 string
 json_data = { 'id' : 12 , 'name' : 'Collins' }
 converted = textbin_obj.json_to_base64(json_data)
-print(converted)
+print("json_to_base64>>", converted)
 
-base64_data = 'eyJpZCI6IDEyLCAibmFtZSI6ICJDb2xsaW5zIn0'
+base64_data = 'eyJpZCI6IDEyLCAibmFtZSI6ICJDb2xsaW5zIn0='
 converted = textbin_obj.base64_to_json(base64_data)
-print(converted)
+print("base64_to_json>>", converted)
 
 
 
