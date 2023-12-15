@@ -1,17 +1,82 @@
 Metadata-Version: 2.1
 Name: PyTextBin
-Version: 0.0.2
+Version: 0.0.3
 Summary: PyTextBin is a versatile Python library facilitating seamless conversion between text, binary, JSON, base64, xml and CSV formats with ease.
 Author: Collins O. Odhiambo
-Author-email: <support@comon.tech>
-Keywords: python,csv,xmml,base64,text,json,binary
+Author-email: <comon928@gmail.com>
+Keywords: PyTextBin,csv,xmml,base64,text,json,binary
 Classifier: Development Status :: 1 - Planning
 Classifier: Intended Audience :: Developers
 Classifier: Programming Language :: Python :: 3
 Classifier: Operating System :: Unix
 Classifier: Operating System :: MacOS :: MacOS X
 Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
 License-File: LICENSE
-Requires-Dist: opencv-python
-Requires-Dist: pyautogui
-Requires-Dist: pyaudio
+
+
+# PyTextBin
+
+**PyTextBin** is a versatile Python library facilitating seamless conversion between text, binary, JSON, base64, xml and CSV formats with ease.'
+See the [documentaion](https://github.com/Comon-tech/Pytextbin/) for more information
+
+
+## Installation
+
+You can install **PyTextBin** using pip from PyPI:
+
+```bash
+pip install PyTextBin
+```
+
+Alternatively, you can find the project on GitHub:
+
+[GitHub Repository](https://github.com/C-o-m-o-n/PyTextBin)
+
+## Usage
+
+### Text and Binary
+
+```python
+# Import everything from textbin
+from pytextbin import *
+
+#To begin, create an object from the Textbin() class, which you'll use to access all the methods.
+
+
+# 0) create textbin_obj instance 
+textbin_obj = pytextbin.Textbin()
+
+# 1) convert text to binary
+text = 'hello world'
+converted = textbin_obj.to_binary(text)
+print("to_binary>>", converted)
+
+# 2) convert json data to a base64 string
+json_data = { 'id' : 12 , 'name' : 'Collins' }
+converted = textbin_obj.json_to_base64(json_data)
+print("json_to_base64>>", converted)
+
+base64_data = 'eyJpZCI6IDEyLCAibmFtZSI6ICJDb2xsaW5zIn0='
+converted = textbin_obj.base64_to_json(base64_data)
+print("base64_to_json>>", converted)
+
+```
+
+## Contributions
+
+Contributions to **PyTextBin** are welcome! You can find the project's GitHub repository and contribute to its development.
+
+- [GitHub Repository](https://github.com/C-o-m-o-n/textbin)
+
+## Contributors
+- [Collins O. Odhiambo](https://github.com/C-o-m-o-n)
+- [Nathaniel Handan](https://github.com/Tinny-Robot)
+- [Pabitra Banerjee](https://github.com/PB2204)
+- [Roldex Stark](https://github.com/r0ld3x)
+- [Lyubomir Ternavskiy](https://github.com/LyubomirT)
+- [comony](https://github.com/comony)
+
+Your contributions are highly appreciated! We hope that **PyTextBin** proves helpful to you. Thank you for using it.
+
+#### I hope it be of help to you thank you. [Collins O. Odhiambo](https://github.com/C-o-m-o-n)

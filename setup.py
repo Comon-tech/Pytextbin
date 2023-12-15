@@ -31,3 +31,4 @@ setup(
         "Operating System :: Microsoft :: Windows",
     ]
 )
+

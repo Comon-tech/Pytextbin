@@ -4,7 +4,6 @@ setup.py
 PyTextBin.egg-info/PKG-INFO
 PyTextBin.egg-info/SOURCES.txt
 PyTextBin.egg-info/dependency_links.txt
-PyTextBin.egg-info/requires.txt
 PyTextBin.egg-info/top_level.txt
 pytextbin/__init__.py
 pytextbin/pytextbin.py
