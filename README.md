@@ -1,58 +1,54 @@
-# textbin
+# PyTextBin
 
-**textbin** is a Python package that provides text-to-binary and binary-to-text conversion, as well as JSON-to-base64 and base64-to-JSON encoding and decoding.
-See the [documentaion](https://c-o-m-o-n.github.io/textbin/) for more information
+**PyTextBin** is a versatile Python library facilitating seamless conversion between text, binary, JSON, base64, xml and CSV formats with ease.'
+See the [documentaion](https://github.com/Comon-tech/Pytextbin/) for more information
 
 
 ## Installation
 
-You can install **textbin** using pip from PyPI:
+You can install **PyTextBin** using pip from PyPI:
 
 ```bash
-pip install textbin
+pip install PyTextBin
 ```
 
 Alternatively, you can find the project on GitHub:
 
-[GitHub Repository](https://github.com/C-o-m-o-n/textbin)
+[GitHub Repository](https://github.com/C-o-m-o-n/PyTextBin)
 
 ## Usage
 
 ### Text and Binary
 
 ```python
-from textbin.textbin import *
+# Import everything from textbin
+from pytextbin import *
 
-# Convert text to binary
-word = "hello"
-converted_word = textbin.to_binary(word)
-print(converted_word)  # Output: '1101000 1100101 1101100 1101100 1101111'
+#To begin, create an object from the Textbin() class, which you'll use to access all the methods.
 
-# Convert binary to text
-binary = "1101000 1100101 1101100 1101100 1101111"
-converted_binary = textbin.to_text(binary)
-print(converted_binary)  # Output: hello
-```
 
-### JSON and Base64
+# 0) create textbin_obj instance 
+textbin_obj = pytextbin.Textbin()
 
-```python
-from textbin.textbin import json_to_base64, base64_to_json
+# 1) convert text to binary
+text = 'hello world'
+converted = textbin_obj.to_binary(text)
+print("to_binary>>", converted)
 
-# Encode a JSON object to base64
-word = {"foo": "bar"}
-converted_word = json_to_base64(word)
-print(converted_word)  # Output: eyJmb28iOiAiYmFyIn0=
+# 2) convert json data to a base64 string
+json_data = { 'id' : 12 , 'name' : 'Collins' }
+converted = textbin_obj.json_to_base64(json_data)
+print("json_to_base64>>", converted)
 
-# Decode a base64 string to a JSON object
-base64_string = "eyJmb28iOiAiYmFyIn0="
-converted_binary = base64_to_json(base64_string)
-print(converted_binary)  # Output: {'foo': 'bar'}
+base64_data = 'eyJpZCI6IDEyLCAibmFtZSI6ICJDb2xsaW5zIn0='
+converted = textbin_obj.base64_to_json(base64_data)
+print("base64_to_json>>", converted)
+
 ```
 
 ## Contributions
 
-Contributions to **textbin** are welcome! You can find the project's GitHub repository and contribute to its development.
+Contributions to **PyTextBin** are welcome! You can find the project's GitHub repository and contribute to its development.
 
 - [GitHub Repository](https://github.com/C-o-m-o-n/textbin)
 
