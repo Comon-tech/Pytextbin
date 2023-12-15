@@ -5,7 +5,7 @@ import os
 here = os.path.abspath(os.path.dirname(__file__))
 
 with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as fh:
-    long_description = "\n" + fh.read()
+    DESCRIPTION = "\n" + fh.read()
 
 VERSION = '0.0.2'
 DESCRIPTION = 'PyTextBin is a versatile Python library facilitating seamless conversion between text, binary, JSON, base64, xml and CSV formats with ease.'

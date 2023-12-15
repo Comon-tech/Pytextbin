@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: PyTextBin
+Version: 0.0.2
+Summary: PyTextBin is a versatile Python library facilitating seamless conversion between text, binary, JSON, base64, xml and CSV formats with ease.
+Author: Collins O. Odhiambo
+Author-email: <support@comon.tech>
+Keywords: python,csv,xmml,base64,text,json,binary
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+License-File: LICENSE
+Requires-Dist: opencv-python
+Requires-Dist: pyautogui
+Requires-Dist: pyaudio
