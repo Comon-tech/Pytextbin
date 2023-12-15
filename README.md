@@ -53,9 +53,13 @@ Contributions to **PyTextBin** are welcome! You can find the project's GitHub re
 - [GitHub Repository](https://github.com/C-o-m-o-n/textbin)
 
 ## Contributors
+- [Collins O. Odhiambo](https://github.com/C-o-m-o-n)
+- [Nathaniel Handan](https://github.com/Tinny-Robot)
+- [Pabitra Banerjee](https://github.com/PB2204)
+- [Roldex Stark](https://github.com/r0ld3x)
+- [Lyubomir Ternavskiy](https://github.com/LyubomirT)
+- [comony](https://github.com/comony)
 
-- [Roldex](https://github.com/r0ld3x)
+Your contributions are highly appreciated! We hope that **PyTextBin** proves helpful to you. Thank you for using it.
 
-Your contributions are highly appreciated! We hope that **textbin** proves helpful to you. Thank you for using it.
-
-#### I hope it be of help to you thank you. c-o-m-o-n
+#### I hope it be of help to you thank you. [Collins O. Odhiambo](https://github.com/C-o-m-o-n)
