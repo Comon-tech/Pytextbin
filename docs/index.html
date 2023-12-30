@@ -16,12 +16,12 @@
     </header>
 
     <main>
-        <section id="about">
+        <section >
             <h2 class="section-title">About PyTextBin</h2>
         <p>PyTextBin is a versatile Python library facilitating seamless conversion between text, binary, JSON, base64, xml and CSV formats with ease.</p>
         </section>
 
-        <section id="experience">
+        <section >
             <h2 class="section-title">Installation</h2>
             <p>You can install textbin through your terminal using pip from PyPI</p>
             <pre>
@@ -103,6 +103,28 @@
         </code>
     </pre>
             </div>
+
+            <h3>Convert JSON and CSV</h3>
+            <div >
+              <pre>
+        <code>
+        from textbin.textbin import *
+        textbin_obj = textbin.Textbin()
+
+
+        # Convert a JSON object to CSV
+        json_list = [{ 'id' : 12 , 'name' : 'Collins' }]
+        converted = textbin_obj.json_to_csv(json_list)
+        print(converted)
+       
+        #Output
+        #id,name
+        #12,Collins
+      
+      </code>
+    </pre>
+            </div>
+            <a href="https://github.com/Comon-tech/Pytextbin">Add more usage</a>
         </section>
         <section id="call-to-action">
             <h2 class="section-title">Get in Touch</h2>

@@ -13,6 +13,12 @@
     transition: 1s;
 
 }
+
+pre{
+    background-color: #d4d1cd;
+    color: #4d3820;
+    border-radius: 10px;
+}
 .section-title:hover{
     background-color: #f7b800;
     color: #333;
