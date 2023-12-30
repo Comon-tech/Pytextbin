@@ -184,7 +184,7 @@ class Textbin:
         if element:
             if element.attrib:
                 return {element.tag: element.attrib}
-            children = element.getchildren()
+            children = element.get(self)
             if children:
                 out = {}
                 for child in children:

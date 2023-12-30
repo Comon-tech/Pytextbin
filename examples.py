@@ -55,9 +55,16 @@ print("************************************************************\n")
 
 #convert json to xml
 print("convert json to xml")
-json_list = [{ 'id' : 12 , 'name' : 'Collins' }]
-converted = textbin_obj.json_to_xml(json_list)
+json_data = { 'id' : 12 , 'name' : 'Collins' }
+converted = textbin_obj.json_to_xml(json_data)
 print(converted)
 
 print("************************************************************\n")
 
+#convert xml to json
+print("convert xml to json")
+xml_data = "<item><id>12</id><name>Collins</name></item>"
+converted = textbin_obj.xml_to_json(xml_data)
+print(converted)
+
+print("************************************************************\n")
