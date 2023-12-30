@@ -21,19 +21,43 @@ To begin, create an object from the Textbin() class, which you'll use to access 
 textbin_obj = pytextbin.Textbin()
 
 # 1) convert text to binary
+print("convert text to binary")
 text = 'hello world'
 converted = textbin_obj.to_binary(text)
-print("to_binary>>", converted)
+print(converted)
+
+print("************************************************************\n")
 
 # 2) convert json data to a base64 string
+print("convert json to base64")
 json_data = { 'id' : 12 , 'name' : 'Collins' }
 converted = textbin_obj.json_to_base64(json_data)
-print("json_to_base64>>", converted)
+print(converted)
 
+print("************************************************************\n")
+
+# 3) convert base64 data to json
+print("convert to base64 to json")
 base64_data = 'eyJpZCI6IDEyLCAibmFtZSI6ICJDb2xsaW5zIn0='
 converted = textbin_obj.base64_to_json(base64_data)
-print("base64_to_json>>", converted)
+print(converted)
+
+print("************************************************************\n")
+
+#convert json to csv
+print("convert json to csv")
+json_list = [{ 'id' : 12 , 'name' : 'Collins' }]
+converted = textbin_obj.json_to_csv(json_list)
+print(converted)
+
+print("************************************************************\n")
 
 
+#convert json to xml
+print("convert json to xml")
+json_list = [{ 'id' : 12 , 'name' : 'Collins' }]
+converted = textbin_obj.json_to_xml(json_list)
+print(converted)
 
+print("************************************************************\n")
 
