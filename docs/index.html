@@ -139,12 +139,11 @@
         converted = textbin_obj.json_to_xml(json_data)
         print(converted)
 
-        #Output <item><id>12</id><name>Collins</name></item>
+        #Output &lt;item&gt;&lt;id&gt;12&lt;/id&gt;&lt;name&gt;Collins&lt;/name&gt;&lt;/item&gt;
 
         #convert xml to  json
-        xml_data = "<item><id>12</id><name>Collins</name></item>"
+        xml_data = "&lt;item&gt;&lt;id&gt;12&lt;/id&gt;&lt;name&gt;Collins&lt;/name&gt;&lt;/item&gt;"
         converted = textbin_obj.xml_to_json(xml_data)
-        print(converted)
         print(converted)
 
         #Output { 'id' : 12 , 'name' : 'Collins' }
