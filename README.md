@@ -1,6 +1,11 @@
 # PyTextBin
 
-**PyTextBin** is a versatile Python library facilitating seamless conversion between text, binary, JSON, base64, xml and CSV formats with ease.'
+<!-- ![image](https://github.com/Comon-tech/Pytextbin/assets/94454803/ab22455d-1b62-4749-908f-d4ac22f12f44)
+-->
+![pytextbin-transformed](https://github.com/Comon-tech/Pytextbin/assets/94454803/71f23858-6e7b-4527-b816-573ddf6f7cd6)
+
+**PyTextBin** 
+is a versatile Python library facilitating seamless conversion between text, binary, JSON, base64, xml and CSV formats with ease.'
 See the [documentaion](https://github.com/Comon-tech/Pytextbin/) for more information
 
 
